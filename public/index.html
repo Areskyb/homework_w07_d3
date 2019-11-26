@@ -16,12 +16,12 @@
 
         <input type="number" v-model.number= "asked" >
 
-        <select class="select">
-          <option v-for="(value,name) in rates" value="Eur">{{name}}</option>
+        <select v-model="selected">
+          <option v-for="(value,name) in rates" v-bind:value= 'value'>{{name}}</option>
         </select>
       </form>
 
-      <!-- <h3>{{exange}}</h3> -->
+      <h3> {{exange}}</h3>
 
     </div>
   </body>

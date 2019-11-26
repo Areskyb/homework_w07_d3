@@ -5,10 +5,17 @@ document.addEventListener("DOMContentLoaded",()=>{
     el:"#app",
     data:{
       rates: '',
-      asked: 0
+      asked: 0,
+      selected:''
     },
     mounted(){
       this.fetchCoins()
+    },
+    computed: {
+      exange: function(){
+        
+        return (this.asked * this.selected).toFixed(2)
+      }
     },
     methods: {
       fetchCoins: function(){
