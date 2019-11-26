@@ -9,6 +9,19 @@
   <body>
     <h1>Money Money</h1>
     <div id="app">
+      <form v-on:submit.prevent = "exange">
+        <select class="select">
+          <option value="Eur">Eur</option>
+        </select>
+
+        <input type="number" v-model.number= "asked" >
+
+        <select class="select">
+          <option v-for="(value,name) in rates" value="Eur">{{name}}</option>
+        </select>
+      </form>
+
+      <!-- <h3>{{exange}}</h3> -->
 
     </div>
   </body>
