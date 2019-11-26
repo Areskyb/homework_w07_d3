@@ -6,15 +6,16 @@ document.addEventListener("DOMContentLoaded",()=>{
     data:{
       rates: '',
       asked: 0,
-      selected:''
+      selected:'',
+      from:''
     },
     mounted(){
       this.fetchCoins()
     },
     computed: {
       exange: function(){
+         return (this.asked * (this.selected / this.from)).toFixed(2);
         
-        return (this.asked * this.selected).toFixed(2)
       }
     },
     methods: {
