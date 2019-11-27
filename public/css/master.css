@@ -1,0 +1,28 @@
+
+html{
+  font-family: 'Righteous', cursive;
+}
+
+body{
+  background-color: #F0E6EF
+}
+h1{
+  color: #9C89B8
+}
+
+select{
+  position: relative;
+ font-family: 'Righteous', cursive;
+ width: 100px;
+height: 35px;
+font-size: 13px;
+}
+input{
+  padding: 7px;
+font-size: 13px;
+ font-family: 'Righteous', cursive;
+}
+#app{
+  text-align: center;
+  margin-top: 20%;
+}

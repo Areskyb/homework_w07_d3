@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
   <script src="js/bundle.js" charset="utf-8"></script>
   </head>
   <body>
-    <h1>Money Money</h1>
     <div id="app">
+      <h1>Money Money</h1>
       <form v-on:submit.prevent = "exange">
-        
+
         <select v-model="from" class="select">
           <option v-for="(value,name) in rates" v-bind:value= 'value'>{{name}}</option>
         </select>
@@ -22,7 +23,7 @@
         </select>
       </form>
 
-      <h3> {{exange}}</h3>
+      <h3 v-if ='selected'> {{exange}}</h3>
 
     </div>
   </body>

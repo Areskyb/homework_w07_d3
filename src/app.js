@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded",()=>{
         const request = fetch("https://api.exchangeratesapi.io/latest")
         .then(response => response.json())
         .then(data => {
-          this.rates = (data.rates)  
+          this.rates = (data.rates);
+          this.rates.EUR = 1.0000;  
         })
       }
     }
